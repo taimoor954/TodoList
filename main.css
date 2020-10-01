@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+ 
+html{
+    font-size: 62.5%;
+} 
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.c {
+    flex-flow: column;
+}
+.main{
+    display: grid;
+    grid-template-rows: 20vh 80vh;
+    background: lightgreen;
+    overflow: hidden;
+}
+.AppHeader{
+    background: lightgreen;
+}
+.AppHeader h1{
+    margin-bottom: 1rem; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+}
+
+
+.AppHeader form input{
+height: 3rem;
+width: 20rem;
+border: none;
+border-bottom: 2px solid gray; 
+
+}
+.AppHeader form .Go{
+    height: 3rem;
+    width: 9rem;
+    background: white;
+}
+
+.Coloum{
+    display: grid;
+    grid-template-rows: 80vh;
+    grid-template-columns: 20fr 60fr 20fr;
+    grid-template-areas: ". AppContent .";
+       background: rgb(110, 166, 221);
+    
+}
+
+.AppContent{
+    grid-area: AppContent;
+background: lightgreen;
+    display: grid;
+    grid-template-rows: 10vh 60vh;
+
+
+}
+.AddTask{
+    background: lightgreen;
+}
+.AddTask form .AddButton{
+    height: 3rem;
+    width: 12rem;
+    
+}
+.AddTask form .Task{
+    height: 3rem;
+    width: 20rem;
+}
+.DisplayMyTask{
+    background: lightgreen;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+.Common{
+    height: 3rem;
+    width: 12rem;
+
+    /* margin-right: 2rem; */
+    margin-left: 2rem; 
+}
+ .item {
+   
+     background: rgb(110, 166, 221);
+;    /* list-style-type: none;  */
+margin-left:2rem;
+margin-right: 2rem; 
+}
+.List  ul i{
+    font-size: 2rem;
+
+}
+.cl{
+    justify-content: flex-end
+}
+.item {
+height: 4rem;;
+  
+}
+.List ul .item .DeleteButton{
+    margin-left: 5rem;
+    border: 3px solid black;
+    height: 2rem;
+    width: 7rem;
+    cursor: pointer;
+    background: lightseagreen;
+}
+
+.List ul .item .DoneButton {
+    margin-left: 2rem;
+    border: 3px solid black;    
+    height: 2rem;
+    width: 7rem;
+    cursor: pointer;
+    background: lightblue;
+
+}
+.List ul .item .UndoButton {
+    margin-left: 2rem;
+    border: 3px solid black;    
+    height: 2rem;
+    width: 7rem;
+    cursor: pointer;
+
+}
+.List ul .item .DoneButton:hover{
+    color: white;
+}
+.List ul .item .DeleteButton:hover{
+    color: white;
+}
+
+
+
+
+
+.List ul .item i{
+    margin-right: 4rem; 
+}
+.List ul .item{
+margin-top: 1rem;
+border: 2px solid black; 
+}
+
+
+@media only screen  and (max-width: 400px)
+{
+html{
+    font-size: 50%; 
+}
+}
